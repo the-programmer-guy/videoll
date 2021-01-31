@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      padding: 0 50px;
+      font-family: monospace;
+     
+      
+    }
+    video {
+      max-width: calc(50% - 50px);
+      margin: 0 50px;
+      box-sizing: border-box;
+      border-radius:4px;
+      padding: 0;
+      border:none;
+      box-shadow:5px 5px 5px #1c1d25;
+    }
+    .copy {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16px;
+      color: white;
+    }
+    button[id=leave]{
+      margin:auto;
+      position:absolute;
+      top:580px;
+      bottom:0;
+      left:0;
+      right:0;
+      width:126px;
+      height:45px;
+      color:white;
+      background-color: rgb(255, 94, 0);
+      font-family: monospace;
+      font-size:150%;
+      border:none;
+      border-radius:4px;
+    }
+  </style>
+</head>
+<body bgcolor="#272934">
+  <div class="copy">Send the 6 digit code after '#' in your URL to a friend.</div>
+  <video id="localVideo" autoplay ></video>
+  <video id="remoteVideo" autoplay></video>
+  <script src="script.js"></script>
+  <button id="leave" onclick="window.location.replace('index.html')">leave</button>
+</body>
+</html>
