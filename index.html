@@ -10,8 +10,8 @@
   <body bgcolor="#272934">
     <script src="sketch.js"></script>
     <input type="text" id="join" placeholder="Enter-id">
-    <button id="h" onclick="window.location.replace('login.html');">host</button>
-      <button id="d" onclick="clickk();">join</button>
+    <button id="h" onclick="window.location.replace('login.html');">Host</button>
+      <button id="d" onclick="clickk();">Join</button>
    <script>
      function clickk(){
         cf = document.getElementById('join').value;
@@ -47,12 +47,13 @@
             width:255px;
             height:35px;
             font-family:monospace;
-            font-size: 100%;
+            font-size: 90%;
             border-top:none;
             border-right:none;
             border-left:none;
-            border-bottom:4px solid black
+            border-bottom:4px solid #0f1014
         }
+        /*this style is for the buttons;*/
         button[id=h]{
             margin:auto;
             position:absolute;
@@ -61,12 +62,29 @@
             left:315px;
             right:0;
             width:126px;
-            height:45px;
+            height:40px;
             font-family:monospace;
             font-size: 100%;
             border:none;
             color:white;
             background-color: rgb(0, 162, 255);
+            border-radius: 4px;
+            
+        }
+        button[id=h]:hover{
+            margin:auto;
+            position:absolute;
+            top:80px;
+            bottom:0;
+            left:315px;
+            right:0;
+            width:126px;
+            height:40px;
+            font-family:monospace;
+            font-size: 100%;
+            border:none;
+            color:white;
+            background-color: rgb(88, 194, 255);
             border-radius: 4px;
             
         }
@@ -78,12 +96,29 @@
             left:586px;
             right:0;
             width:126px;
-            height:45px;
+            height:42px;
             font-family:monospace;
             font-size: 100%;
-            border:none;
-            color:white;
-            background-color: rgb(0, 162, 255);
+            border:2px solid  rgb(0, 162, 255);
+            color: rgb(0, 162, 255);
+            background-color:#272934;
+            border-radius: 4px;
+            
+        }
+        button[id=d]:hover{
+            margin:auto;
+            position:absolute;
+            top:80px;
+            bottom:0;
+            left:586px;
+            right:0;
+            width:126px;
+            height:42px;
+            font-family:monospace;
+            font-size: 100%;
+            border:2px solid   rgb(88, 194, 255);
+            color: rgb(88, 194, 255);
+            background-color:#404355;
             border-radius: 4px;
             
         }
