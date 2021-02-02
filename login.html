@@ -3,6 +3,7 @@
 <head>
   <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
   <style>
     body {
@@ -33,6 +34,7 @@
       font-size: 16px;
       color: white;
     }
+    /*this code is 4 the style of the buttons.*/
     button[id=leave]{
       margin:auto;
       position:absolute;
@@ -40,22 +42,83 @@
       bottom:0;
       left:0;
       right:0;
-      width:126px;
-      height:45px;
-      color:white;
-      background-color: rgb(255, 94, 0);
+      width:128px;
+      height:43px;
+      color:rgb(255, 94, 0);
+      background-color:#272934 ;
       font-family: monospace;
-      font-size:150%;
-      border:none;
+      font-size:152%;
+      border:2px solid rgb(255, 94, 0);
+      border-radius:4px;
+      
+    }
+    button[id=leave]:hover{
+      margin:auto;
+      position:absolute;
+      top:580px;
+      bottom:0;
+      left:0;
+      right:0;
+      width:128px;
+      height:43px;
+      color:rgb(253, 139, 72);
+      background-color:#363949 ;
+      font-family: monospace;
+      font-size:152%;
+      border:2px solid rgb(253, 139, 72);
       border-radius:4px;
     }
+    button[id=mute]{
+      margin:auto;
+      position:absolute;
+      top:580px;
+      bottom:0;
+      left:350px;
+      right:0;
+      width:45px;
+      height:43px;
+      color:rgb(255, 255, 255);
+      background-color:#f12222 ;
+      font-family: monospace;
+      font-size:150%;
+      border:2px solid #f12222;
+      border-radius:4px;
+    }
+  
+   
   </style>
 </head>
 <body bgcolor="#272934">
-  <div class="copy">Send the 6 digit code after '#' in your URL to a friend.</div>
-  <video id="localVideo" autoplay ></video>
+
+  <div class="copy">Send the code after '#' in your URL to a friend.</div>
+  <video id="localVideo" autoplay></video>
   <video id="remoteVideo" autoplay></video>
   <script src="script.js"></script>
-  <button id="leave" onclick="window.location.replace('index.html')">leave</button>
+  <button id="leave" onclick="window.location.replace('index.html')"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbspleave</button>
+ 
+ <script>
+   
+   function mutt(){
+    d = document.getElementById("localVideo");
+    mut = document.getElementById("mute");
+     if(d.muted === true){
+       d.muted = false;
+       console.log("unmuted");
+       mut.innerHTML = '<i  class="fa fa-microphone" aria-hidden="true"></i>';
+     }else{
+       d.muted = true;
+       console.log("muted");
+       mut.innerHTML = '<i  class="fa fa-microphone-slash" aria-hidden="true"></i>';
+     }
+     
+   }
+   
+ </script>
+  <button id="mute" onclick="mutt()" class="btn">
+    
+    <i  class="fa fa-microphone" aria-hidden="true"></i>
+    
+  </button>
+  
 </body>
 </html>
