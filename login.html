@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
+  <button id="boxing"></button>
   <style>
     body {
       display: flex;
@@ -24,7 +25,7 @@
       border-radius:4px;
       padding: 0;
       border:none;
-      box-shadow:5px 5px 5px #1c1d25;
+      box-shadow:10px 10px 10px #0a0c0e;
     }
     .copy {
       position: fixed;
@@ -38,42 +39,42 @@
     button[id=leave]{
       margin:auto;
       position:absolute;
-      top:580px;
+      top:620px;
       bottom:0;
       left:0;
-      right:0;
+      right:65px;
       width:128px;
       height:43px;
-      color:rgb(255, 94, 0);
-      background-color:#272934 ;
+      color:white;
+      background-color:#00786a ;
       font-family: monospace;
       font-size:152%;
-      border:2px solid rgb(255, 94, 0);
+      border:2px solid #00786a;
       border-radius:4px;
       
     }
     button[id=leave]:hover{
       margin:auto;
       position:absolute;
-      top:580px;
+      top:620px;
       bottom:0;
       left:0;
-      right:0;
+      right:65px;
       width:128px;
       height:43px;
-      color:rgb(253, 139, 72);
-      background-color:#363949 ;
+      color:white;
+      background-color:#06a18f ;
       font-family: monospace;
       font-size:152%;
-      border:2px solid rgb(253, 139, 72);
+      border:2px solid #06a18f;
       border-radius:4px;
     }
     button[id=mute]{
       margin:auto;
       position:absolute;
-      top:580px;
+      top:620px;
       bottom:0;
-      left:350px;
+      left:155px;
       right:0;
       width:45px;
       height:43px;
@@ -84,11 +85,40 @@
       border:2px solid #f12222;
       border-radius:4px;
     }
-  
+    button[id=mute]:hover{
+      margin:auto;
+      position:absolute;
+      top:620px;
+      bottom:0;
+      left:155px;
+      right:0;
+      width:45px;
+      height:43px;
+      color:rgb(255, 255, 255);
+      background-color:#f84747 ;
+      font-family: monospace;
+      font-size:150%;
+      border:2px solid #f84747;
+      border-radius:4px;
+    }
+   button[id=boxing]{
+     margin:auto;
+     position:absolute;
+     width:225px;
+     height:65px;
+     top:620px;
+     bottom:0;
+     left:0;
+     right:0;
+     background-color:#111416;
+     border:none;
+     border-radius:8px;
+    
+   }
    
   </style>
 </head>
-<body bgcolor="#272934">
+<body bgcolor="#1e2327">
 
   <div class="copy">Send the code after '#' in your URL to a friend.</div>
   <video id="localVideo" autoplay></video>
@@ -119,6 +149,6 @@
     <i  class="fa fa-microphone" aria-hidden="true"></i>
     
   </button>
-  
+ 
 </body>
 </html>
