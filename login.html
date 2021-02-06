@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width">
   <button id="boxing"></button>
+  <title>VIDEOLL</title>
   <style>
     body {
       display: flex;
@@ -25,6 +26,7 @@
       border-radius:4px;
       padding: 0;
       border:none;
+      background-color: #49535c;
       box-shadow:10px 10px 10px #0a0c0e;
     }
     .copy {
@@ -32,7 +34,7 @@
       top: 10px;
       left: 50%;
       transform: translateX(-50%);
-      font-size: 16px;
+      font-size:150%;
       color: white;
     }
     /*this code is 4 the style of the buttons.*/
@@ -46,10 +48,10 @@
       width:128px;
       height:43px;
       color:white;
-      background-color:#00786a ;
+      background-color:#ff2e27 ;
       font-family: monospace;
       font-size:152%;
-      border:2px solid #00786a;
+      border:2px solid #ff2e27;
       border-radius:4px;
       
     }
@@ -63,10 +65,10 @@
       width:128px;
       height:43px;
       color:white;
-      background-color:#06a18f ;
+      background-color:#ff645f ;
       font-family: monospace;
       font-size:152%;
-      border:2px solid #06a18f;
+      border:2px solid #ff645f;
       border-radius:4px;
     }
     button[id=mute]{
@@ -79,10 +81,10 @@
       width:45px;
       height:43px;
       color:rgb(255, 255, 255);
-      background-color:#f12222 ;
+      background-color:#3a434b ;
       font-family: monospace;
       font-size:150%;
-      border:2px solid #f12222;
+      border:none;
       border-radius:4px;
     }
     button[id=mute]:hover{
@@ -95,10 +97,10 @@
       width:45px;
       height:43px;
       color:rgb(255, 255, 255);
-      background-color:#f84747 ;
+      background-color:#56636e;
       font-family: monospace;
       font-size:150%;
-      border:2px solid #f84747;
+      border:none;
       border-radius:4px;
     }
    button[id=boxing]{
@@ -113,17 +115,71 @@
      background-color:#111416;
      border:none;
      border-radius:8px;
+
     
    }
+   .sty{
+        color:white;
+        font-family:monospace;
+        font-size:150%;
+        margin:auto;
+        position:absolute;
+        width:200px;
+        height:60px;
+        top:-600px;
+        bottom:0;
+        left:-80px;
+        right:0;
+        text-align: center;
+          background:#3b444d;
+          border-radius:4px;
+          border:none;
+     
+    }
+    button[id=cop]{
+       width:60px;
+       height:60px;
+       margin:auto;
+       position:absolute;
+       font-size: 200%;
+       border-radius:4px;
+       border:none;
+       background-color:#3b444d;
+       color:white;
+       top:-600px;
+       bottom:0;
+       left:190px;
+       right:0;
+    }
+    button[id=cop]:hover{
+       width:60px;
+       height:60px;
+       margin:auto;
+       position:absolute;
+       font-size: 200%;
+       border-radius:4px;
+       border:none;
+       background-color:#5b6a79;
+       color:white;
+       top:-600px;
+       bottom:0;
+       left:190px;
+       right:0;
+    }
    
   </style>
 </head>
 <body bgcolor="#1e2327">
-
-  <div class="copy">Send the code after '#' in your URL to a friend.</div>
+  <button id="cop" onclick="copym()" ><i class="fa fa-clipboard"></i></button>
+ 
+  <div class="copy">Share the 'id' with your peer to start meeting.</div>
   <video id="localVideo" autoplay></video>
   <video id="remoteVideo" autoplay></video>
+  <script src="copyer.js"></script>
   <script src="script.js"></script>
+ 
+  
+  
   <button id="leave" onclick="window.location.replace('index.html')"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbspleave</button>
  
  <script>
@@ -140,15 +196,23 @@
        console.log("muted");
        mut.innerHTML = '<i  class="fa fa-microphone-slash" aria-hidden="true"></i>';
      }
+    }
      
-   }
-   
+    copyer("id-name");
+function copym(){
+  
+  copyer("hello");
+}
+  
+ 
  </script>
+ 
   <button id="mute" onclick="mutt()" class="btn">
     
     <i  class="fa fa-microphone" aria-hidden="true"></i>
     
   </button>
+  
  
 </body>
 </html>

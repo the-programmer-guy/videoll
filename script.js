@@ -1,7 +1,12 @@
 // Generate random room name if needed
+
 if (!location.hash) {
-  location.hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
+  location.hash = Math.floor(Math.random() * 0xFFFFFFF).toString(16);
 }
+// this is a one line comment break
+let d = document.write('<div class="sty" ><p id="hello" > '+location.hash+'</p></div>');
+
+
 const roomHash = location.hash.substring(1);
 
 // TODO: Replace with your own channel ID
@@ -15,6 +20,7 @@ const configuration = {
 };
 let room;
 let pc;
+
 
 
 function onSuccess() {};
@@ -117,3 +123,4 @@ function localDescCreated(desc) {
     onError
   );
 }
+

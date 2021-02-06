@@ -3,13 +3,14 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <meta charset="utf-8" />
-
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+      <title>VIDEOLL</title>
+   <link rel="icon" type="image/png" href="https://cdn.yourwebsite.com/favicon-16x16.png" sizes="16x16">    <meta charset="utf-8" />
+   <link rel="stylesheet" href="style.css">
   </head>
   <body bgcolor="#1e2327">
+    <img src="954889.png" id="lo">
     <script src="sketch.js"></script>
     <input type="text" id="join" placeholder="Enter-meeting-id" required>
     <button id="h" onclick="window.location.replace('login.html');">Create a meeting +</button>
@@ -17,127 +18,16 @@
    <script>
      function clickk(){
         cf = document.getElementById('join').value;
-        window.location.replace('https://the-programmer-guy.github.io/video-call/login.html#'+cf);
+        window.location.replace('login.html'+cf);
      }
    </script>
-    <style>
-      body{
-        color:white;
-        font-family:monospace;
-        font-size:200%;
-      }
-        canvas{
-            margin:auto;
-            position:absolute;
-            top:50px;
-            bottom:0;
-            left:0;
-            right:350px;
-            border:none;
-            border-radius: 8px;
-            box-shadow:10px 10px 10px #0c0e10;
-        }
-       
-        input[type=text]{
-          color:white;
-          background-color: #1e2327;
-            margin:auto;
-            position:absolute;
-            top:-100px;
-            bottom:0;
-            left:450px;
-            right:0;
-            width:255px;
-            height:35px;
-            font-family:monospace;
-            font-size: 90%;
-            border-top:none;
-            border-right:none;
-            border-left:none;
-            border-bottom:4px solid #97afc2;
-        }
-        /*this style is for the buttons;*/
-        button[id=h]{
-            margin:auto;
-            position:absolute;
-            top:190px;
-            bottom:0;
-            left:450px;
-            right:0;
-            width:260px;
-            height:40px;
-            font-family:monospace;
-            font-size: 80%;
-            border:none;
-            color:white;
-            background-color:#fbb800;
-            border-radius: 4px;
-            
-        }
-        button[id=h]:hover{
-            margin:auto;
-            position:absolute;
-            top:190px;
-            bottom:0;
-            left:450px;
-            right:0;
-            width:260px;
-            height:40px;
-            font-family:monospace;
-            font-size: 80%;
-            border:none;
-            color:white;
-            background-color: #ffc62b;
-            border-radius: 4px;
-            
-        }
-        button[id=d]{
-            margin:auto;
-            position:absolute;
-            top:0px;
-            bottom:0;
-            left:450px;
-            right:0;
-            width:260px;
-            height:42px;
-            font-family:monospace;
-            font-size: 90%;
-            border:4px solid  #fb2600;
-            color: #ffffff;
-            background-color:#fb2600;
-            border-radius: 4px;
-            
-        }
-        button[id=d]:hover{
-            margin:auto;
-            position:absolute;
-            top:0px;
-            bottom:0;
-            left:450px;
-            right:0;
-            width:260px;
-            height:42px;
-            font-family:monospace;
-            font-size: 90%;
-            border:4px solid  #f84829;
-            color: #ffffff;
-            background-color:#f84829;
-            border-radius: 4px;
-            
-        }
-        .or{
-          margin:auto;
-          position:absolute;
-          top:60px;
-          bottom:0;
-          left:450px;
-          right:0;
-          width:90px;
-          height:0;
-        }
-    </style>
-    <center>
-    HTML-BASED-VIDEO-CALL</center>
-    <div class="or">- or -</div>
-  </body>
+    <div class="cp"><center>
+    VIDEOLL</center></div>
+    
+    <div class="or">or</div>
+    <button id="bog"></button>
+  <button id="gith" onclick="window.location.replace('https://github.com/the-programmer-guy/video-call/')"> <i class="fab fa-github" aria-hidden="true"></i> </button>
+  <button id="disc" onclick="window.location.replace('https://discord.gg/xgxuu5k3VB')"> <i class="fab fa-discord" aria-hidden="true"></i> </button>
+  
+</body>
 </html>
