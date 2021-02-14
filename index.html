@@ -1,33 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+      
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+       <title>VIDEOLL</title>
+    <link rel="icon" type="image/png" href="https://cdn.yourwebsite.com/favicon-16x16.png" sizes="16x16">    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body bgcolor="#1e2327">
+     
+      <script src="sketch.js"></script>
+      <input type="text" id="join" placeholder="Enter-meeting-id" >
+      <button id="h" onclick="window.location.replace('login.html'); ">Create a meeting +</button>
+        <button id="d" onclick="clickk(); ">Join</button>
+    <script>
+
+      function clickk(){
+        var cf = document.getElementById('join').value;
+          window.location.replace('login.html'+cf); 
+          
+      }
+    </script>
+      <div class="cp"><center>
+      VIDEOLL</center></div>
+      
+      <div class="or">or</div>
+      <button id="bog"></button>
+    <button id="gith" onclick="window.location.replace('https://github.com/the-programmer-guy/videoll/')"> <i class="fab fa-github" aria-hidden="true"></i> </button>
+    <button id="disc" onclick="window.location.replace('https://discord.gg/xgxuu5k3VB')"> <i class="fab fa-discord" aria-hidden="true"></i> </button>
     
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-      <title>VIDEOLL</title>
-       <meta charset="utf-8" />
-   <link rel="stylesheet" href="style.css">
-  </head>
-  <body bgcolor="#1e2327">
-    <img src="954889.png" id="lo">
-    <script src="sketch.js"></script>
-    <input type="text" id="join" placeholder="Enter-meeting-id" required>
-    <button id="h" onclick="window.location.replace('login.html');">Create a meeting +</button>
-      <button id="d" onclick="clickk();">Join</button>
-   <script>
-     function clickk(){
-        cf = document.getElementById('join').value;
-        window.location.replace('login.html'+cf);
-     }
-   </script>
-    <div class="cp"><center>
-    VIDEOLL</center></div>
-    
-    <div class="or">or</div>
-    <button id="bog"></button>
-  <button id="gith" onclick="window.location.replace('https://github.com/the-programmer-guy/videoll/')"> <i class="fab fa-github" aria-hidden="true"></i> </button>
-  <button id="disc" onclick="window.location.replace('https://discord.gg/xgxuu5k3VB')"> <i class="fab fa-discord" aria-hidden="true"></i> </button>
-  
-</body>
-</html>
+  </body>
+  </html>

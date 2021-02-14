@@ -1,219 +1,348 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width">
-  <button id="boxing"></button>
-  <title>VIDEOLL</title>
-  <style>
-    body {
-      display: flex;
-      height: 100vh;
-      margin: 0;
-      align-items: center;
-      justify-content: center;
-      padding: 0 50px;
-      font-family: monospace;
-     
-      
-    }
-    video {
-      max-width: calc(50% - 50px);
-      margin: 0 50px;
-      box-sizing: border-box;
-      border-radius:4px;
-      padding: 0;
-      border:none;
-      background-color: #49535c;
-      box-shadow:10px 10px 10px #0a0c0e;
-    }
-    .copy {
-      position: fixed;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size:150%;
-      color: white;
-    }
-    /*this code is 4 the style of the buttons.*/
-    button[id=leave]{
-      margin:auto;
-      position:absolute;
-      top:620px;
-      bottom:0;
-      left:0;
-      right:65px;
-      width:128px;
-      height:43px;
-      color:white;
-      background-color:#ff2e27 ;
-      font-family: monospace;
-      font-size:152%;
-      border:2px solid #ff2e27;
-      border-radius:4px;
-      
-    }
-    button[id=leave]:hover{
-      margin:auto;
-      position:absolute;
-      top:620px;
-      bottom:0;
-      left:0;
-      right:65px;
-      width:128px;
-      height:43px;
-      color:white;
-      background-color:#ff645f ;
-      font-family: monospace;
-      font-size:152%;
-      border:2px solid #ff645f;
-      border-radius:4px;
-    }
-    button[id=mute]{
-      margin:auto;
-      position:absolute;
-      top:620px;
-      bottom:0;
-      left:155px;
-      right:0;
-      width:45px;
-      height:43px;
-      color:rgb(255, 255, 255);
-      background-color:#3a434b ;
-      font-family: monospace;
-      font-size:150%;
-      border:none;
-      border-radius:4px;
-    }
-    button[id=mute]:hover{
-      margin:auto;
-      position:absolute;
-      top:620px;
-      bottom:0;
-      left:155px;
-      right:0;
-      width:45px;
-      height:43px;
-      color:rgb(255, 255, 255);
-      background-color:#56636e;
-      font-family: monospace;
-      font-size:150%;
-      border:none;
-      border-radius:4px;
-    }
-   button[id=boxing]{
-     margin:auto;
-     position:absolute;
-     width:225px;
-     height:65px;
-     top:620px;
-     bottom:0;
-     left:0;
-     right:0;
-     background-color:#111416;
-     border:none;
-     border-radius:8px;
-
-    
-   }
-   .sty{
-        color:white;
-        font-family:monospace;
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/290988617b.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width">
+    <button id="boxing"></button>
+    <title>VIDEOLL</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0 50px;
+        font-family: monospace;
+      background-color:black;
+      }
+      video {
+        max-width: calc(50% - 50px);
+        margin: 0 50px;
+        box-sizing: border-box;
+        border-radius:0px;
+        padding: 0;
+        border:none;
+        background-color: transparent;
+        box-shadow:none;
+        
+      }
+      .copy {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size:150%;
+        color: white;
+      }
+      /*this code is 4 the style of the buttons.*/
+      button[id=leave]{
         margin:auto;
         position:absolute;
-        width:200px;
-        height:60px;
-        top:-600px;
-        bottom:0;
-        left:-80px;
+      
+        bottom:2.5%;
+        left:0;
+        right:-85%;
+        width:120px;
+        height:45px;
+        color:white;
+      background-image:linear-gradient(45deg ,#02AABD,#00CDAC);
+        font-family: monospace;
+        font-size:130%;
+        border:none;
+        border-radius:4px;
+        cursor: pointer;
+        
+      }
+      button[id=leave]:hover{
+        margin:auto;
+        position:absolute;
+      
+        bottom:2.5%;
+        left:0;
+        right:-85%;
+        width:120px;
+        height:45px;
+        color:white;
+        background-image:linear-gradient(to right ,#07cfe5,#05ecc6);
+        font-family: monospace;
+        font-size:130%;
+        border:none;
+        border-radius:4px;
+      }
+      button[id=mute]{
+        margin:auto;
+        position:absolute;
+        
+      
+        bottom:1.8%;
+        left:120px;
         right:0;
-        text-align: center;
-          background:#3b444d;
-          border-radius:4px;
-          border:none;
-     
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        background-color:#1c1e20 ;
+        font-family:monospace;
+        font-size:155%;
+        border:none;
+        border-radius:4px;
+        cursor: pointer;
+      }
+      button[id=mute]:hover{
+        margin:auto;
+        position:absolute;
+        
+        bottom:1.8%;
+        left:120px;
+        right:0;
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        background-color:#21262b;
+        font-family: monospace;
+        font-size:155%;
+        border:none;
+        border-radius:4px;
+      }
+      button[id=lin]{
+        margin:auto;
+        position:absolute;
+        
+        bottom:1.8%;
+        left:-120px;
+        right:0;
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        
+        background-color:transparent;
+        font-family: monospace;
+        font-size:155%;
+        border:none;
+        border-radius:4px;
+        cursor: pointer;
+      }
+      button[id=lin]:hover{
+        margin:auto;
+        position:absolute;
+        
+        bottom:1.8%;
+        left:-120px;
+        right:0;
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        background-color:#21262b;
+        font-family: monospace;
+        font-size:155%;
+        border:none;
+        border-radius:4px;
+      }
+    button[id=boxing]{
+      margin:auto;
+      position:absolute;
+      width: 100%;
+      height:85px;
+      bottom:0;
+      left:0;
+      right:0;
+      background-color:#1c1e20;
+      border:none;
+      border-radius:none;
+
+      
     }
-    button[id=cop]{
-       width:60px;
-       height:60px;
-       margin:auto;
-       position:absolute;
-       font-size: 200%;
-       border-radius:4px;
-       border:none;
-       background-color:#3b444d;
-       color:white;
-       top:-600px;
-       bottom:0;
-       left:190px;
-       right:0;
+    .sty{
+      color:transparent;
+       
     }
-    button[id=cop]:hover{
-       width:60px;
-       height:60px;
-       margin:auto;
-       position:absolute;
-       font-size: 200%;
-       border-radius:4px;
-       border:none;
-       background-color:#5b6a79;
-       color:white;
-       top:-600px;
-       bottom:0;
-       left:190px;
-       right:0;
+    .sty ::selection{
+      color:transparent;
+      background-color: transparent;
     }
-   
-  </style>
-</head>
-<body bgcolor="#1e2327">
-  <button id="cop" onclick="copym()" ><i class="fa fa-clipboard"></i></button>
- 
-  <div class="copy">Share the 'id' with your peer to start meeting.</div>
-  <video id="localVideo" autoplay></video>
-  <video id="remoteVideo" autoplay></video>
-  <script src="copyer.js"></script>
-  <script src="script.js"></script>
- 
+    
+  
+    button[id=camm]{
+      margin:auto;
+        position:absolute;
+        
+        bottom:1.8%;
+        left:0px;
+        right:0;
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        background-color:transparent ;
+        font-family:monospace;
+        font-size:135%;
+        border:none;
+        border-radius:4px;
+        cursor: pointer;
+    }
+    button[id=camm]:hover{
+      margin:auto;
+        position:absolute;
+        
+        bottom:1.8%;
+        left:0px;
+        right:0;
+        width:55px;
+        height:55px;
+        color:rgb(255, 255, 255);
+        background-color:#21262b ;
+        font-family:monospace;
+        font-size:135%;
+        border:none;
+        border-radius:4px;
+    }
+    i[id=slash]{
+      color: #ff2e27;
+    }
+    i[id=al]{
+      color: white;
+    }
+    i[id=mic]{
+      color:white;
+    }
+    i[id=m]{
+      color:#ff2e27
+    }
+   p[id=gs]{
+     color:white;
+   }
+   .alert {
+ padding:12px 20px;
+ background-image:linear-gradient(45deg ,#02AABD,#00CDAC);
+  color: white;
+  height:50px;
+  font-size:150%;
+  display: none;
+  border-radius: 4px;
+  bottom:12%;
   
   
-  <button id="leave" onclick="window.location.replace('index.html')"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbspleave</button>
+  margin:auto;
+  position: absolute;
  
- <script>
-   
-   function mutt(){
-    d = document.getElementById("localVideo");
-    mut = document.getElementById("mute");
-     if(d.muted === true){
-       d.muted = false;
-       console.log("unmuted");
-       mut.innerHTML = '<i  class="fa fa-microphone" aria-hidden="true"></i>';
-     }else{
-       d.muted = true;
-       console.log("muted");
-       mut.innerHTML = '<i  class="fa fa-microphone-slash" aria-hidden="true"></i>';
-     }
-    }
-     
-    copyer("id-name");
-function copym(){
-  
-  copyer("hello");
-  alert("Id copied!!");
 }
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+    </style>
+  </head>
+  <body>
+  
+  <div class="basic">
+    <div class="copy">Share the 'id' with your peer to start meeting.</div>
+    <video id="localVideo" autoplay></video>
+    <video id="remoteVideo" autoplay></video>
+    
+
+  </div>
+    <script src="copyer.js"></script>
+    <script src="script.js"></script>
+  
+    
+    
+    <button id="leave" onclick="window.location.replace('index.html')"><center><i class="fas fa-times "></i>&nbspleave</center></button>
+    
+  <script>
+  function camera_off() {
+    if (navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function (stream) {
+        video.srcObject = stream;
+      })
+  }
+      
+    };
+
+    function mutt(){
+      d = document.getElementById("localVideo");
+
+      mut = document.getElementById("mute");
+      if(d.muted === true){
+        d.muted = false;
+        console.log("unmuted");
+        mut.innerHTML = '<i id="mic" class="fas fa-microphone" aria-hidden="true"></i>';
+      }else{
+        d.muted = true;
+        console.log("muted");
+        mut.innerHTML = '<i id="m" class="fas fa-microphone-slash" aria-hidden="true"></i>';
+      }
+      }
+    
+      function h(){
+     var g = document.getElementById('l').style.display="block";
+   }
+   copyer("id-name");
+  function copym(){
+    
+    copyer("hello");
+   
+  }
+   
+   function ff(){
+     copym();
+     h();
+   }
+   
+  
+    function offcamera(){
+      const video = document.getElementById('localVideo');
+      const df = document.getElementById('remoteVideo');
+      var cammm = document.getElementById('camm');
+      if(video.autoplay === true){
+        video.autoplay = false;
+        
+      video.load();
+      console.log('video turned off');
+      cammm.innerHTML='<i id="slash" class="fas fa-video-slash" aria-hidden="true"></i>'
+        
+      }else{
+        video.autoplay = true;
+      
+      video.load();
+      console.log('video turned on');
+      cammm.innerHTML = '<i id="al" class="fas fa-video" aria-hidden="true"></i>';
+      }
+    
+
+  // A video's MediaStream object is available through its srcObject attribute
   
  
- </script>
- 
-  <button id="mute" onclick="mutt()" class="btn">
-    
-    <i  class="fa fa-microphone" aria-hidden="true"></i>
-    
-  </button>
+    }
   
- 
-</body>
-</html>
+  </script>
+  <button id="camm" onclick="offcamera()"><i class="fas fa-video" aria-hidden="true"></i></button>
+    <button id="mute" onclick="mutt()" class="btn">
+      
+      <i  class="fas fa-microphone" aria-hidden="true"></i>
+      
+    </button>
+    <!-- <button id="lin" onclick="copym()" ><i class="fa fa-clipboard"></i></button> -->
+    <!-- this is for the chat box in the video call... -->
+    <button id="lin" title="copy meeting ID" onclick="ff();"><i class="fa fa-clipboard"></i></button>
+    <!-- <button onclick="document.getElementById('s').style.display='none'">close</button> -->
+    <div id= "l" class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+       Meeting Id is copied!!
+       
+    </div>
+  </body>
+  </html>
